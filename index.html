@@ -1,23 +1,23 @@
 <html>
 <head>
 <title>CV | Phil Brockman 🚀</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+loadSource = () => {
+    $.ajax({
+        url: "https://docs.google.com/document/d/e/2PACX-1vQl2rjfv7zJcLV7ddpA0df9abUObzvQEh1xm-NI7umoEj5LySsNZHf7y19P1UXdWdeLj0jjPkOm4GCQ/pub",
+    })
+    .done(function(html) {
+        $("body").append(html);
+        $('a').attr('target','_blank');
+    });
+}
+
+loadSource()
+</script>
 </head>
 
 <body>
-<iframe src="https://docs.google.com/document/d/e/2PACX-1vQl2rjfv7zJcLV7ddpA0df9abUObzvQEh1xm-NI7umoEj5LySsNZHf7y19P1UXdWdeLj0jjPkOm4GCQ/pub?embedded=true" style="
-    position: fixed;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    width: 100%;
-    border: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    z-index: 999999;
-    height: 100%;
-  ">
-</iframe>
 </body>
 
 </html>
